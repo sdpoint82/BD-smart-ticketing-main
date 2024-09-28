@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Ticket Booking - P-Ticket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.23.0/dist/full.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#" class="text-2xl font-bold text-green-600">P-Ticket</a>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-600 hover:text-green-600">Home</a>
+        <a href="#" class="text-gray-600 hover:text-green-600">About</a>
+        <a href="#" class="text-gray-600 hover:text-green-600">Destination</a>
+        <a href="#" class="text-gray-600 hover:text-green-600">Search</a>
+        <button class="btn btn-outline btn-success">Bus</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96 relative" style="background-image: url('https://your-image-link.com');">
+    <div class="container mx-auto text-center text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 class="text-4xl font-bold">End-to-End Travel with P Paribahan</h1>
+      <p class="mt-4">Book your tickets directly online for a streamlined experience.</p>
+      <a href="#" class="btn btn-primary mt-6">Buy Tickets</a>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="bg-white py-8">
+    <div class="container mx-auto text-center space-y-4">
+      <div class="flex justify-center gap-10">
+        <div class="text-center">
+          <p class="text-3xl font-bold text-green-600">500K+</p>
+          <p>Registered Users</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-green-600">1.7 Lacks</p>
+          <p>Tickets Sold</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-green-600">80K+</p>
+          <p>Rental Partners</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="py-8 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-6">Best Offers for You</h2>
+      <div class="flex justify-center gap-10">
+        <div class="card bg-yellow-100 p-6 rounded-lg shadow-lg">
+          <p class="text-xl font-bold">15% OFF</p>
+          <p>Use Code: <strong>NEW15</strong> by January 2024</p>
+        </div>
+        <div class="card bg-pink-100 p-6 rounded-lg shadow-lg">
+          <p class="text-xl font-bold">20% OFF</p>
+          <p>Use Code: <strong>COUPLE20</strong> by January 2024</p>
+        </div>
+      </div>
+      <a href="#" class="btn btn-outline btn-success mt-6">See All Offers</a>
+    </div>
+  </section>
+
+  <!-- Seat Booking Section -->
+  <section class="container mx-auto py-12">
+    <div class="bg-white p-6 shadow-md rounded-lg">
+      <h2 class="text-xl font-semibold mb-6">P.H Paribahan</h2>
+
+      <div class="grid grid-cols-2 gap-8">
+        <!-- Seat Selection -->
+        <div>
+          <h3 class="text-lg mb-4">Select Your Seat</h3>
+          <div class="grid grid-cols-4 gap-4">
+            <!-- Available Seats -->
+            <button class="btn btn-outline">A1</button>
+            <button class="btn btn-outline">B2</button>
+            <button class="btn btn-outline btn-success">D3</button> <!-- Selected Seat -->
+            <button class="btn btn-outline">G2</button>
+            <button class="btn btn-outline">E1</button> <!-- Selected -->
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div>
+          <h3 class="text-lg mb-4">Booking Details</h3>
+          <form>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700">Passenger Name</label>
+              <input type="text" class="input input-bordered w-full" placeholder="Enter your name">
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+              <input type="text" class="input input-bordered w-full" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700">Email ID</label>
+              <input type="email" class="input input-bordered w-full" placeholder="Enter your email">
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700">Have a coupon?</label>
+              <input type="text" class="input input-bordered w-full" placeholder="Apply coupon">
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700">Total Price: BDT 1100</label>
+            </div>
+            <button class="btn btn-primary w-full">Next</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto text-center text-white">
+      <p>P-Ticket is a digital platform to make your daily commuting better.</p>
+      <p class="mt-4">&copy; 2024 P-Ticket services limited. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="btn btn-outline">Terms & Conditions</a>
+        <a href="#" class="btn btn-outline">Return & Refund Policy</a>
+        <a href="#" class="btn btn-outline">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
