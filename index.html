@@ -15,7 +15,7 @@
 <body class="font-inter w-9/12 mx-auto">
    <header class="mt-12 flex flex-col justify-center items-center space-y-10 ">
     <!-- navbar here -->
-    <nav class="flex justify-center items-center w-full">
+    <nav class="flex flex-col md:flex-row lg:flex-row justify-center items-center w-full">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -63,11 +63,11 @@
      <section class="bg-[url(images/banner.png)] flex justify-center items-center flex-col text-center w-full bg-no-repeat bg-center  rounded-2xl">
       <div class="px-[200px] pt-[70px]">
         <h1 class="text-6xl font-raleway font-extrabold text-white">
-          End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span>
+          End-to-End Travel with <br><span class="text-[#1DD100]">Sohag Paribahan</span>
         </h1>
         <p class="text-lg font-normal mt-6 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
         </p>
-        <button class="btn bg-[#1DD100] mt-10 border-none">
+        <button onclick="nextPageBtn()" class="btn bg-[#1DD100] mt-10 border-none" id="first-btn">
           Buy Tickets
         </button>
       </div>
@@ -111,8 +111,8 @@
     <!-- Discount section here -->
     <section>
       <h2 class="font-raleway text-4xl font-extrabold text-[#030712] text-center">Best offers for you</h2>
-      <div class="flex flex-row justify-center items-center mt-12">
-        <div class="flex flex-row items-center border-2 bg-[#FFBF0F] rounded-xl">
+      <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center mt-12">
+        <div class="flex flex-col md:flex-row lg:flex-row items-center border-2 bg-[#FFBF0F] rounded-xl">
           <div class="border-r-4 border-dashed p-12 space-y-2">
             <h1 class="text-4xl text-[#030712cc] font-extrabold">15% OFF</h1>
             <p class="text-[#030712cc] font-bold space-y-4">on your next purchase</p>
@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <div class="flex flex-row items-center border-2 ml-5 bg-[#F78C9C] rounded-xl">
+        <div class="flex flex-col md:flex-row lg:flex-row items-center border-2 ml-5 bg-[#F78C9C] rounded-xl">
           <div class="border-r-4 border-dashed p-12 space-y-2">
             <h1 class="text-4xl text-[#030712cc] font-extrabold">15% OFF</h1>
             <p class="text-[#030712cc] font-bold space-y-4">on your next purchase</p>
@@ -150,5 +150,10 @@
    </main>
 
    <footer></footer>
+
+   <!-- js file here -->
+
+   <script src="js/utility.js"></script>
+   <script src="js/ticket.js"></script>
 </body>
 </html>
