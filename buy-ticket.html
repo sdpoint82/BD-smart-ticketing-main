@@ -36,7 +36,7 @@
                        </div>
                        <div class="flex justify-center items-center gap-4 bg-[#1dd10026] h-[56px] p-5">
                            <img src="images/seat-green.png" alt="">
-                           <p class="text-[#1DD100]"><span>40 </span>Seats left</p>
+                           <p class="text-[#1DD100]"><span id="total-seat">40 </span>Seats left</p>
                        </div>
                     </div>
    
@@ -61,7 +61,9 @@
                   <!-- price here -->
                    <div class="flex flex-col justify-center items-center text-center p-10 ">
                         <img src="images/fare.png" alt="">
-                       <h1 class="text-3xl text-[#030712] font-extrabold font-raleway">550 Taka</h1>
+                       <h1 class="text-3xl text-[#030712] font-extrabold font-raleway">
+                        <span id="ticket-price-here">550</span> Taka
+                      </h1>
                        <p class="text-lg text-[#03071299] font-normal">Per Seat</p>
                    </div>
                </div>
@@ -79,11 +81,11 @@
                 <div class="flex justify-between mb-10">
                     <div class="flex items-center text-center">
                         <img src="images/seat-gray.png" alt="">
-                        <h3>Available</h3>
+                        <h3>Selected</h3>
                     </div>
                     <div class="flex items-center text-center text-[#1DD100]">
                         <img src="images/seat-green.png" alt="">
-                        <h3>Selected</h3>
+                        <h3>Available <span id="seatsLeft">40</span></h3>
                     </div>
                 </div>
                 <!-- ticket table -->
@@ -101,137 +103,136 @@
                         </div>
                         
                       </thead>
-                      <tbody>
+                      <tbody id="seats"> 
                         <tr>
                           <td>A</td>
-                          <td><button class="btn px-10 my-3">A1</button></td>
-                          <td><button class="btn px-10 my-3">A2</button></td>
-                          <td><button class="btn px-10 my-3">A3</button></td>
-                          <td><button class="btn px-10 my-3">A4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="A1" data-price="550" data-class="Economy">A1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="A2" data-price="550" data-class="Economy">A2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="A3" data-price="550" data-class="Economy">A3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="A4" data-price="550" data-class="Economy">A4</button></td>
                         </tr>
                         <tr>
                           <td>B</td>
-                          <td><button class="btn px-10 my-3">B1</button></td>
-                          <td><button class="btn px-10 my-3">B2</button></td>
-                          <td><button class="btn px-10 my-3">B3</button></td>
-                          <td><button class="btn px-10 my-3">B4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="B1" data-price="550" data-class="Economy">B1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="B2" data-price="550" data-class="Economy">B2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="B3" data-price="550" data-class="Economy">B3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="B4" data-price="550" data-class="Economy">B4</button></td>
                         </tr>
                         <tr>
                           <td>C</td>
-                          <td><button class="btn px-10 my-3">C1</button></td>
-                          <td><button class="btn px-10 my-3">C2</button></td>
-                          <td><button class="btn px-10 my-3">C3</button></td>
-                          <td><button class="btn px-10 my-3">C4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="C1" data-price="550" data-class="Economy">C1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="C2" data-price="550" data-class="Economy">C2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="C3" data-price="550" data-class="Economy">C3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="C4" data-price="550" data-class="Economy">C4</button></td>
                         </tr>
                         <tr>
                           <td>D</td>
-                          <td><button class="btn px-10 my-3">D1</button></td>
-                          <td><button class="btn px-10 my-3">D2</button></td>
-                          <td><button class="btn px-10 my-3">D3</button></td>
-                          <td><button class="btn px-10 my-3">D4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="D1" data-price="550" data-class="Economy">D1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="D2" data-price="550" data-class="Economy">D2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="D3" data-price="550" data-class="Economy">D3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="D4" data-price="550" data-class="Economy">D4</button></td>
                         </tr>
                         <tr>
                           <td>E</td>
-                          <td><button class="btn px-10 my-3">E1</button></td>
-                          <td><button class="btn px-10 my-3">E2</button></td>
-                          <td><button class="btn px-10 my-3">E3</button></td>
-                          <td><button class="btn px-10 my-3">E4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="E1" data-price="550" data-class="Economy">E1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="E2" data-price="550" data-class="Economy">E2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="E3" data-price="550" data-class="Economy">E3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="E4" data-price="550" data-class="Economy">E4</button></td>
                         </tr>
                         <tr>
                           <td>F</td>
-                          <td><button class="btn px-10 my-3">F1</button></td>
-                          <td><button class="btn px-10 my-3">F2</button></td>
-                          <td><button class="btn px-10 my-3">F3</button></td>
-                          <td><button class="btn px-10 my-3">F4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="F1" data-price="550" data-class="Economy">F1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="F2" data-price="550" data-class="Economy">F2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="F3" data-price="550" data-class="Economy">F3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="F4" data-price="550" data-class="Economy">F4</button></td>
                         </tr>
                         <tr>
                           <td>G</td>
-                          <td><button class="btn px-10 my-3">G1</button></td>
-                          <td><button class="btn px-10 my-3">G2</button></td>
-                          <td><button class="btn px-10 my-3">G3</button></td>
-                          <td><button class="btn px-10 my-3">G4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="G1" data-price="550" data-class="Economy">G1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="G2" data-price="550" data-class="Economy">G2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="G3" data-price="550" data-class="Economy">G3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="G4" data-price="550" data-class="Economy">G4</button></td>
                         </tr>
                         <tr>
                           <td>H</td>
-                          <td><button class="btn px-10 my-3">H1</button></td>
-                          <td><button class="btn px-10 my-3">H2</button></td>
-                          <td><button class="btn px-10 my-3">H3</button></td>
-                          <td><button class="btn px-10 my-3">H4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="H1" data-price="550" data-class="Economy">H1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="H2" data-price="550" data-class="Economy">H2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="H3" data-price="550" data-class="Economy">H3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="H4" data-price="550" data-class="Economy">H4</button></td>
                         </tr>
                         <tr>
                           <td>I</td>
-                          <td><button class="btn px-10 my-3">I1</button></td>
-                          <td><button class="btn px-10 my-3">I2</button></td>
-                          <td><button class="btn px-10 my-3">I3</button></td>
-                          <td><button class="btn px-10 my-3">I4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="I1" data-price="550" data-class="Economy">I1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="I2" data-price="550" data-class="Economy">I2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="I3" data-price="550" data-class="Economy">I3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="I4" data-price="550" data-class="Economy">I4</button></td>
                         </tr>
                         <tr>
                           <td>J</td>
-                          <td><button class="btn px-10 my-3">J1</button></td>
-                          <td><button class="btn px-10 my-3">J2</button></td>
-                          <td><button class="btn px-10 my-3">J3</button></td>
-                          <td><button class="btn px-10 my-3">J4</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="J1" data-price="550" data-class="Economy">J1</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="J2" data-price="550" data-class="Economy">J2</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="J3" data-price="550" data-class="Economy">J3</button></td>
+                          <td><button class="seat btn px-10 my-3" data-name="J4" data-price="550" data-class="Economy">J4</button></td>
                         </tr>
                       </tbody>
                     </table>
+                    
                   </div>
+                 
             </div>
             
-    
                <!-- buy here -->
                
                <div class="p-8">
                 <h3 class="font-normal text-3xl mb-10">Select Your Seat</h3>
                 <div>
-                    <div class="flex flex-row justify-between border-b-4 border-dashed mb-4 gap:4 md:gap-32 lg:gap-32">
-                        <p class="text-lg font-bold">Seat<span class="bg-[#1DD100] p-1">0</span></p>
-                        <p class="text-lg font-bold">Class</p>
-                        <p class="text-lg font-bold">Price</p>
-                    </div>
-                    <div class="flex flex-row justify-between gap:4 md:gap-32 lg:gap-32 mb-4">
-                        <p class="text-base font-normal"><span>C2</span></p>
-                        <p class="text-base font-normal">Economoy</p>
-                        <p class="text-base font-normal"><span>550</span></p>
-                    </div>
-                    <div class="flex flex-row justify-between gap:4 md:gap-32 lg:gap-32">
-                        <p class="text-base font-normal"><span>C3</span></p>
-                        <p class="text-base font-normal">Economoy</p>
-                        <p class="text-base font-normal"><span>550</span></p>
-                    </div>
+                    <div id="seatBooking" class="flex flex-col border-b-4 border-dashed mb-4">
+                        <div class="flex flex-row justify-between  gap:4 md:gap-32 lg:gap-32">
+                          <p class="text-lg font-bold">Seat<span id="totalSeats">0</span></p>
+                          <p class="text-lg font-bold">Class <span id="selected-class"></span></p>
+                          <p class="text-lg font-bold">Price <span id="price-per-seat"></span></p>
+                        </div>
 
+                        <div id="seatDetails" class="grid gap-x-auto gap-y-4 grid-row-3   text-lg font-bold">
+
+                        </div>
+                        <div class="hidden" id="seatDetails"></div>
+                        <div class="hidden" id="selectedSeats">Seat: 0</div>
+                        <div class="hidden" id="totalSeats">Selected Seats: 0</div>
+                       
                 </div>
+                
                 <hr style="width: 100%; height: 2px; background-color: rgba(3, 7, 18, 0.2);">
 
-                <div class="flex flex-row justify-between p-8">
-                  <p class=" text-lg font-bold">Total Price</p>
-                  <p class=" text-lg font-bold">BDT <span>0</span></p>
+                <div class="flex flex-row justify-end p-8">
+                  <div id="totalPrice">Total Price: 0 BDT</div>
+                  <!-- <h3 class="text-lg font-bold">Total Price: <span id="totalPrice"></span> BDT</h3> -->
                 </div>
 
                 <div class="relative p-5 border-none rounded-xl flex justify-between ml-8">
-                  <input type="text" name="" id="" placeholder="Have any copupon?">
-                  <button class="btn bg-[#1DD100] text-white">Apply</button>
+                  <input type="text" name="" id="coupon" placeholder="Have any coupon?">
+                  <button id="applyCoupon" class="btn bg-[#1DD100] text-white">Apply</button>
                 </div>
-                <div class="flex flex-row justify-between p-8">
-                  <p class=" text-lg font-bold">Grand Total</p>
-                  <p class=" text-lg font-bold">BDT <span>0</span></p>
-                </div>
+                <p class=" text-lg font-bold">Discount: <span id="discount">0</span> BDT</p>
+                <p class=" text-lg font-bold mt-6">Grand Total <span id="grandTotal">0</span> BDT</p>
+                
 
                 <!-- Passenger details -->
 
                 <div class="mt-12">
                   <label class="text-lg font-bold " for="">Passenger Name*</label>
                   <br>
-                  <input class="p-5 mt-4 mb-6 w-full" type="text" name="" id="" placeholder="Enter Your Name">
+                  <input class="p-5 mt-4 mb-6 w-full" type="text" name="" id="name" placeholder="Enter Your Name">
 
                   <label class="text-lg font-bold" for="">Phone Number*</label>
                   <br>
-                  <input class="p-5 mt-4 mb-6 w-full" type="tel" name="" id="" placeholder="Enter Your Phone Number">
+                  <input class="p-5 mt-4 mb-6 w-full" type="tel" name="" id="phone" placeholder="Enter Your Phone Number">
 
                   <label class="text-lg font-bold " for="">Email ID</label>
                   <br>
                   <input class="p-5 mt-6 w-full mb-6" type="email" name="" id="" placeholder="Enter Your Email ID">
 
-                  <button class="btn bg-[#1DD100] w-full text-xl font-extrabold text-white">Next</button>
+                  <button id="next" class="btn bg-[#1DD100] w-full text-xl font-extrabold text-white">Next</button>
 
                   <div class="flex justify-center gap-10 mt-6">
                     <p class="text-base font-normal  text-[#03071299]"> <u>Terms and Conditions</u></p>
@@ -242,7 +243,9 @@
                 </div>
 
 
-               </div>           
+               </div>  
+               
+               
           </section>
 
     </main>
